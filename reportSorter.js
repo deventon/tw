@@ -35,7 +35,7 @@ function moveMail(name) {
         $('.quickedit-label:contains("schickt die Unterstützung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("zieht seine Unterstützung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("stationiert Armee")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
-        $('select[name*="group_id"] option:contains("Scouts")').prop('selected', true);
+        $('select[name*="group_id"] option:contains("Sup")').prop('selected', true);
         $(".btn[name='arch']").click();
     }
     if (name == "AM") {
@@ -43,7 +43,7 @@ function moveMail(name) {
         $('.quickedit-label:contains("Warteschlange abgeschlossen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("Warteschlange unterbrochen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("Speicher-Verteilung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
-        $('select[name*="group_id"] option:contains("Scouts")').prop('selected', true);
+        $('select[name*="group_id"] option:contains("AM")').prop('selected', true);
         $(".btn[name='arch']").click();
     }
     if (name == "Achievements") {
