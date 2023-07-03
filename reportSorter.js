@@ -30,7 +30,7 @@ function moveMail(name) {
         $(".btn[name='arch']").click();
     }
     if (name == "Sup") {
-        //if correct page, run this, this will select all Scouts reports
+        //if correct page, run this, this will select all support reports
         $('.quickedit-label:contains("unterstützt")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("schickt die Unterstützung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("zieht seine Unterstützung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
@@ -38,8 +38,8 @@ function moveMail(name) {
         $('select[name*="group_id"] option:contains("Sup")').prop('selected', true);
         $(".btn[name='arch']").click();
     }
-    if (name == "AM") {
-        //if correct page, run this, this will select all Scouts reports
+    if (name == "Account-Manager") {
+        //if correct page, run this, this will select all AM reports
         $('.quickedit-label:contains("Warteschlange abgeschlossen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("Warteschlange unterbrochen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('.quickedit-label:contains("Speicher-Verteilung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
