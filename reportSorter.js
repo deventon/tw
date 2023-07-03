@@ -40,7 +40,9 @@ function moveMail(name) {
     }
     if (name == "AM") {
         //if correct page, run this, this will select all Scouts reports
-        $('.quickedit-label:contains("AM ")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
+        $('.quickedit-label:contains("Warteschlange abgeschlossen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
+        $('.quickedit-label:contains("Warteschlange unterbrochen")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
+        $('.quickedit-label:contains("Speicher-Verteilung")').closest(".quickedit.report-title").parent().prev().find('input').prop("checked", true);
         $('select[name*="group_id"] option:contains("Scouts")').prop('selected', true);
         $(".btn[name='arch']").click();
     }
